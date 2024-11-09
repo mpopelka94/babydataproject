@@ -34,7 +34,7 @@ The Angry Neighbor Mis-User Story has been mitigated when:
 
 # BabyDataApp Mockup
 BabyDataApp Login Page
-![image](https://github.com/user-attachments/assets/f39869d2-0630-47dc-83d8-a8447299e81f)
+![image](https://github.com/user-attachments/assets/d05b76ea-cd4f-429c-bf9c-e46f5f93b422)
 
 The user can view which babies they have access to.
 ![image](https://github.com/user-attachments/assets/caad8449-28a2-456f-b613-6d0427b6a136)
