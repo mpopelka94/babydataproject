@@ -55,13 +55,13 @@ This is the user page where the baby’s events for a day can be viewed.
 ![image](https://github.com/user-attachments/assets/113db9c7-0271-4094-a010-3466f1a42a75)
 
 # BabyDataApp C4 Architecture Diagrams
-Context Diagram
+## Context Diagram
 ![image](https://github.com/user-attachments/assets/10e5c826-730e-4413-9378-5e8d7f5aa2ea)
 
-Container Diagram
-![image](https://github.com/user-attachments/assets/dd849eb2-47aa-4c60-9523-79a1d7359fb6)
+## Container Diagram
+![image](https://github.com/user-attachments/assets/abf252ea-010c-4d33-a930-733e5e098a06)
 
-Component Diagram
+## Component Diagram
 ![image](https://github.com/user-attachments/assets/e429d0aa-84b3-4266-98f0-ff53118075e1)
 
 
