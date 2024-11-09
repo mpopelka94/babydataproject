@@ -54,4 +54,16 @@ If the user has access to add an event, this is the event page they will see.
 This is the user page where the baby’s events for a day can be viewed.
 ![image](https://github.com/user-attachments/assets/113db9c7-0271-4094-a010-3466f1a42a75)
 
+# BabyDataApp C4 Architecture Diagrams
+Context Diagram
+![image](https://github.com/user-attachments/assets/10e5c826-730e-4413-9378-5e8d7f5aa2ea)
+
+Container Diagram
+![image](https://github.com/user-attachments/assets/dd849eb2-47aa-4c60-9523-79a1d7359fb6)
+
+Component Diagram
+![image](https://github.com/user-attachments/assets/e429d0aa-84b3-4266-98f0-ff53118075e1)
+
+
+
 
