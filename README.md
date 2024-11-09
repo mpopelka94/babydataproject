@@ -4,10 +4,10 @@ Parents of infants have the ever-important job of ensuring their little one is n
 Traditionally, these statistics might be documented on a notebook or notepad, but these pages can get lost, destroyed, and are hard to read at 3AM when your baby won’t sleep. BabyDataApp provides a quick and convenient web user interface that allows parents to track their little one. Paper and pen can be retired in favor of the parents’ cell phones for ease of use. BabyDataApp tracks information such as the dates and times of wet diapers, dirty diapers, medicine used, fluids/feedings ingested, and any general notes that might go with one of these aspects (super fussy at diaper change, for example).
 
 ## Installation
-***Change this*** Complete installation instructions will go here upon app completion.
+***Change this for final*** Complete installation instructions will go here upon app completion.
 
 ## Getting Started
-***Change this*** To use BabyDataApp, simply use Docker to spin up a new instance. ***Also may use AWS to host?***
+***Change this for final*** To use BabyDataApp, simply use Docker to spin up a new instance. ***Also may use AWS to host?***
 
 ## Deliverables
 - [User/Mis-User Cases](https://github.com/mpopelka94/babydataproject/blob/main/docs/UseMisuseStories.md)
