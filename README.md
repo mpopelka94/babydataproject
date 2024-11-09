@@ -12,6 +12,7 @@ Traditionally, these statistics might be documented on a notebook or notepad, bu
 ## Deliverables
 - [User/Mis-User Cases](https://github.com/mpopelka94/babydataproject/blob/main/docs/UseMisuseStories.md)
 - [BabyDataApp Mockup](https://github.com/mpopelka94/babydataproject/tree/main/docs#babydataapp-mockup)
+- [BabyDataApp C4 Diagrams](https://github.com/mpopelka94/babydataproject/blob/main/docs/README.md#babydataapp-c4-architecture-diagrams)
 
 ## License
 The MIT License (MIT)
