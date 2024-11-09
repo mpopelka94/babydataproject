@@ -34,25 +34,25 @@ The Angry Neighbor Mis-User Story has been mitigated when:
 
 
 # BabyDataApp Mockup
-BabyDataApp Login Page
+## BabyDataApp Login Page
 ![image](https://github.com/user-attachments/assets/d05b76ea-cd4f-429c-bf9c-e46f5f93b422)
 
-The user can view which babies they have access to.
+## The user can view which babies they have access to.
 ![image](https://github.com/user-attachments/assets/caad8449-28a2-456f-b613-6d0427b6a136)
 
-If the user has the proper access, they can add a baby.
+## If the user has the proper access, they can add a baby.
 ![image](https://github.com/user-attachments/assets/fcc52e34-4a0f-4bc7-8d93-f87bedfd8420)
 
-If the user has the proper access, they can edit and/or delete the baby from the app. If there are many babies, the user can also filter by the baby’s name, age, and any allergies.
+## If the user has the proper access, they can edit and/or delete the baby from the app. If there are many babies, the user can also filter by the baby’s name, age, and any allergies.
 ![image](https://github.com/user-attachments/assets/2253c723-2717-46b9-8cdb-faef1c53d091)
  
-The parents will be able to add users and control their access levels to ensure only the proper personnel have the minimum access needed to complete their tasks.
+## The parents will be able to add users and control their access levels to ensure only the proper personnel have the minimum access needed to complete their tasks.
 ![image](https://github.com/user-attachments/assets/30a42bdd-bef3-4db7-a4c0-abe321a52c74)
 
-If the user has access to add an event, this is the event page they will see.  
+## If the user has access to add an event, this is the event page they will see.  
 ![image](https://github.com/user-attachments/assets/2a0fff10-621c-46ea-9d38-321aab1a1e74)
 
-This is the user page where the baby’s events for a day can be viewed.
+## This is the user page where the baby’s events for a day can be viewed.
 ![image](https://github.com/user-attachments/assets/113db9c7-0271-4094-a010-3466f1a42a75)
 
 
