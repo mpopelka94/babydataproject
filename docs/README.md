@@ -32,6 +32,7 @@ As an angry neighbor, I want to view the baby’s data so I can plan loud, chaot
 The Angry Neighbor Mis-User Story has been mitigated when:
 -	Access controls have been implemented to prevent unauthorized data access.
 
+
 # BabyDataApp Mockup
 BabyDataApp Login Page
 ![image](https://github.com/user-attachments/assets/d05b76ea-cd4f-429c-bf9c-e46f5f93b422)
@@ -53,6 +54,7 @@ If the user has access to add an event, this is the event page they will see.
 
 This is the user page where the baby’s events for a day can be viewed.
 ![image](https://github.com/user-attachments/assets/113db9c7-0271-4094-a010-3466f1a42a75)
+
 
 # BabyDataApp C4 Architecture Diagrams
 ## Context Diagram
