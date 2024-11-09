@@ -10,7 +10,7 @@ Traditionally, these statistics might be documented on a notebook or notepad, bu
 ***Change this*** To use BabyDataApp, simply use Docker to spin up a new instance. ***Also may use AWS to host?***
 
 ## Deliverables
--(User/Mis-User Cases)[https://github.com/mpopelka94/babydataproject/blob/main/docs/UseMisuseStories.md]
+- [User/Mis-User Cases](https://github.com/mpopelka94/babydataproject/blob/main/docs/UseMisuseStories.md)
 
 ## License
 The MIT License (MIT)
