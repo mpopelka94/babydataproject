@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'input_data' %}">Add Hi Input</a></li>
+                    <li><a href="{% url 'input_data' %}">Add Input</a></li>
                     <li><a href="{% url 'view_data' %}">View Entries</a></li>
 
                 </ul>
@@ -55,7 +55,10 @@
                         <tr>
                             <th>Date/Time</th>
                             <th>Child</th>
-                            <th>Details</th>
+                            <th>Diaper Change</th>
+                            <th>Meals</th>
+                            <th>Sleep</th>
+                            <th>Meds</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,6 +66,10 @@
                             <tr>
                                 <td>{{ entry.created_at_date }}</td>
                                 <td>{{ entry.name }}</td>
+                                <td>{{ entry.diaper_change }}</td>
+                                <td>{{ entry.meal }}</td>
+                                <td>{{ entry.sleep }}</td>
+                                <td>{{ entry.meds }}</td>
 {#                                <td>{{ entry.allergies }}</td>}#}
                             </tr>
                         {% endfor %}

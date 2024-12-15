@@ -15,8 +15,9 @@ class BabyEvent(Baby):
     # dirty_diaper = models.BooleanField(default=False)
     meal = models.CharField(max_length=100)
     sleep = models.CharField(max_length=100)
+    meds = models.CharField(max_length=100, default='')
 
 
     def __str__(self):
         # return self.name
-        return f"Data: {self.name, self.diaper_change, self.meal, self.sleep} (Added at: {self.created_at_date, self.created_at_time})"
+        return f"Data: {self.name, self.diaper_change, self.meal, self.sleep, self.meds} (Added at: {self.created_at_date, self.created_at_time})"
