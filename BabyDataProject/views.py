@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import DataEntryForm
 from .models import Baby
+from .models import Entry
 
 # View to input new data
 def input_data(request):
@@ -15,5 +16,7 @@ def input_data(request):
 
 # View to display all data entries
 def view_data(request):
-    data_entries = DataEntry.objects.all().order_by('-created_at')  # Order by the most recent first
+    data_entries = DataEntryForm.objects.all().order_by('-created_at')  # Order by the most recent first
     return render(request, 'tracker/view_data.html', {'data_entries': data_entries})
+
+

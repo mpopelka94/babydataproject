@@ -15,5 +15,13 @@ def input_data(request):
 
 # View to display all data entries
 def view_data(request):
-    data_entries = Baby.objects.all().order_by('-created_at')  # Order by the most recent first
+    data_entries = Baby.objects.all().order_by('-created_at_date')  # Order by the most recent first
     return render(request, 'view_data.html', {'data_entries': data_entries})
+
+def home(request):
+    # Retrieve recent entries
+    recent_entries = Baby.objects.all().order_by('-created_at_date')[:5]  # Get the latest 5 entries
+
+    return render(request, 'home.html', {
+        'recent_entries': recent_entries
+    })

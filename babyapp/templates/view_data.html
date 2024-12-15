@@ -7,9 +7,10 @@
     <h1>Data Entries</h1>
     <ul>
         {% for entry in data_entries %}
-            <li>{{ entry.name }} ({{ entry.created_at }})</li>
+            <li>{{ entry.name }} ({{ entry.created_at_date }})</li>
         {% endfor %}
     </ul>
-    <a href="{% url 'input_data' %}">Enter New Data</a>
+    <li><a href="{% url 'input_data' %}">Enter New Data</a></li>
+    <li><a href="{% url 'home' %}">Home</a></li>
 </body>
 </html>
