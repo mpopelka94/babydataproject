@@ -18,18 +18,62 @@
                     <li><a href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'input_data' %}">Add Input</a></li>
                     <li><a href="{% url 'view_data' %}">View Entries</a></li>
+                    <li><a href="{% url 'profile' %}">View Profile</a></li>
+                    <li><form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                    <button type="submit">Logout</button>
+                    </form></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <h1>Data Entries</h1>
-    <ul>
-        {% for entry in data_entries %}
-            <li>{{ entry.name }} ({{ entry.created_at_date }})</li>
-        {% endfor %}
-    </ul>
-    <li><a href="{% url 'input_data' %}">Enter New Data</a></li>
-    <li><a href="{% url 'home' %}">Home</a></li>
+{#    <ul>#}
+{#        {% for entry in data_entries %}#}
+{#            <li>{{ entry.name }} ({{ entry.created_at_date }})</li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+    <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="btn-action" onclick="window.location.href='{% url 'input_data' %}'">
+                    <i class="fas fa-plus-circle"></i> Add New Entry
+                </button>
+{#                <button class="btn-action" onclick="window.location.href='{% url 'view_data' %}'">#}
+{#                    <i class="fas fa-eye"></i> View All Entries#}
+{#                </button>#}
+            </div>
+    <!-- All Entries Section -->
+            <section class="recent-entries">
+                <h2>All Entries</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date/Time</th>
+                            <th>Child</th>
+                            <th>Diaper Change</th>
+                            <th>Meals</th>
+                            <th>Sleep</th>
+                            <th>Meds</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for entry in data_entries %}
+                            <tr>
+                                <td>{{ entry.created_at_date }}</td>
+                                <td>{{ entry.name }}</td>
+                                <td>{{ entry.diaper_change }}</td>
+                                <td>{{ entry.meal }}</td>
+                                <td>{{ entry.sleep }}</td>
+                                <td>{{ entry.meds }}</td>
+{#                                <td>{{ entry.allergies }}</td>}#}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </section>
+{#    Bottom two buttons are currently redundant#}
+{#    <li><a href="{% url 'input_data' %}">Enter New Data</a></li>#}
+{#    <li><a href="{% url 'home' %}">Home</a></li>#}
 </body>
 </html>

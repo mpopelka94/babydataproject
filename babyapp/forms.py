@@ -31,27 +31,27 @@ class BabyEventForm(forms.ModelForm):
         widgets = {
             'name': TextInput(attrs={
                 'class':'form-control',
-                'style':'width:100px;',
-                'placeholder':'Name You are here',
+                'style':'width:500px;',
+                'placeholder':'Name of Baby',
             }),
             'diaper_change': TextInput(attrs={
                 'class':'form-control',
-                'style':'width:100px;',
-                'placeholder':'Diaper Change',
+                'style':'width:500px;',
+                'placeholder':'Diaper Change Details',
             }),
             'meal': TextInput(attrs={
                 'class':'form-control',
-                'style':'width:100px;',
-                'placeholder':'Meal',
+                'style':'width:500px;',
+                'placeholder':'Did Baby Eat?',
             }),
             'sleep': TextInput(attrs={
                 'class':'form-control',
-                'style':'width:100px;',
-                'placeholder':'Sleep',
+                'style':'width:500px;',
+                'placeholder':'Did Baby Sleep?',
             }),
             'meds': TextInput(attrs={
                 'class':'form-control',
-                'style':'width:100px;',
-                'placeholder':'Meds',
+                'style':'width:500px;',
+                'placeholder':'Did you give Baby any meds?',
             })
         }
