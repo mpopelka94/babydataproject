@@ -42,19 +42,19 @@
                 </button>
             </div>
 
-            <!-- Date Filter and Search Bar -->
-            <div class="filters">
-                <form method="GET" action="{% url 'home' %}">
-                    <input type="date" name="start_date" placeholder="Start Date" value="{{ request.GET.start_date }}">
-                    <input type="date" name="end_date" placeholder="End Date" value="{{ request.GET.end_date }}">
-                    <input type="text" name="search" placeholder="Search by keyword" value="{{ request.GET.search }}">
-                    <button type="submit">Filter</button>
-                </form>
-            </div>
+{#            <!-- Date Filter and Search Bar -->#}
+{#            <div class="filters">#}
+{#                <form method="GET" action="{% url 'home' %}">#}
+{#                    <input type="date" name="start_date" placeholder="Start Date" value="{{ request.GET.start_date }}">#}
+{#                    <input type="date" name="end_date" placeholder="End Date" value="{{ request.GET.end_date }}">#}
+{#                    <input type="text" name="search" placeholder="Search by keyword" value="{{ request.GET.search }}">#}
+{#                    <button type="submit">Filter</button>#}
+{#                </form>#}
+{#            </div>#}
 
             <!-- Recent Entries Section -->
             <section class="recent-entries">
-                <h2>Recent Entries</h2>
+                <h2>Last 5 Entries</h2>
                 <table>
                     <thead>
                         <tr>
@@ -69,7 +69,7 @@
                     <tbody>
                         {% for entry in recent_entries %}
                             <tr>
-                                <td>{{ entry.created_at_date }}</td>
+                                <td>{{ entry.created_at_time }}</td>
                                 <td>{{ entry.name }}</td>
                                 <td>{{ entry.diaper_change }}</td>
                                 <td>{{ entry.meal }}</td>
@@ -81,21 +81,46 @@
                     </tbody>
                 </table>
             </section>
-
-            <!-- Insights / Analytics -->
-            <section class="insights">
-                <h2>Child Insights</h2>
-                <div class="graphs">
-                    <div class="graph">
-                        <h3>Entries Over Time</h3>
-                        <canvas id="entriesOverTimeChart"></canvas> <!-- Placeholder for graph -->
-                    </div>
-                    <div class="graph">
-                        <h3>Most Active Time of Day</h3>
-                        <canvas id="activeTimeChart"></canvas> <!-- Placeholder for graph -->
-                    </div>
-                </div>
-            </section>
+{#            <section class="recent-entries">#}
+{#                <h2>Baby Information</h2>#}
+{#                <table>#}
+{#                    <thead>#}
+{#                        <tr>#}
+{#                            <th>Baby Name</th>#}
+{##}
+{#                            <th>Meals</th>#}
+{#                            <th>Sleep</th>#}
+{#                            <th>Meds</th>#}
+{#                        </tr>#}
+{#                    </thead>#}
+{#                    <tbody>#}
+{#                        {% for entry in recent_entries %}#}
+{#                            <tr>#}
+{#                                <td>{{ entry.name }}</td>#}
+{#                                <td>{{ entry.age }}</td>#}
+{#                                <td>{{ entry.meal }}</td>#}
+{#                                <td>{{ entry.sleep }}</td>#}
+{#                                <td>{{ entry.meds }}</td>#}
+{#                                <td>{{ entry.allergies }}</td>}#}
+{#                            </tr>#}
+{#                        {% endfor %}#}
+{#                    </tbody>#}
+{#                </table>#}
+{#            </section>#}
+{#            <!-- Insights / Analytics -->#}
+{#            <section class="insights">#}
+{#                <h2>Child Insights</h2>#}
+{#                <div class="graphs">#}
+{#                    <div class="graph">#}
+{#                        <h3>Entries Over Time</h3>#}
+{#                        <canvas id="entriesOverTimeChart"></canvas> <!-- Placeholder for graph -->#}
+{#                    </div>#}
+{#                    <div class="graph">#}
+{#                        <h3>Most Active Time of Day</h3>#}
+{#                        <canvas id="activeTimeChart"></canvas> <!-- Placeholder for graph -->#}
+{#                    </div>#}
+{#                </div>#}
+{#            </section>#}
         </div>
     </main>
 

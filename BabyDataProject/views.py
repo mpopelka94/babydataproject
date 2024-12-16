@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import DataEntryForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Baby
 from .models import Entry
@@ -23,7 +24,8 @@ from .models import Entry
 # def profile(request):
 #     return render(request, 'profile.html')
 
-# View to input new data
+# View to input new data - login required
+
 def input_data(request):
     if request.method == 'POST':
         form = DataEntryForm(request.POST)
@@ -34,9 +36,10 @@ def input_data(request):
         form = DataEntryForm()
     return render(request, 'input_data.html', {'form': form})
 
-# View to display all data entries
+# View to display all data entries - login required
+
 def view_data(request):
-    data_entries = DataEntryForm.objects.all().order_by('-created_at')  # Order by the most recent first
+    data_entries = DataEntryForm.objects.all().order_by('-created_at_date')  # Order by the most recent first
     return render(request, 'view_data.html', {'data_entries': data_entries})
 
 

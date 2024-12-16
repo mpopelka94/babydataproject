@@ -5,6 +5,7 @@ from .models import Baby, BabyEvent
 class DataEntryForm(forms.ModelForm):
     class Meta:
         model = Baby
+
         fields = ['name','age','allergy']
         widgets = {
             'name': TextInput(attrs={
