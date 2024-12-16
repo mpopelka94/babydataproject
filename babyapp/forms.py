@@ -27,7 +27,7 @@ class DataEntryForm(forms.ModelForm):
 class BabyEventForm(forms.ModelForm):
     class Meta:
         model = BabyEvent
-        fields = ['name','diaper_change','meal','sleep']
+        fields = ['name','diaper_change','meal','sleep','meds']
         widgets = {
             'name': TextInput(attrs={
                 'class':'form-control',
@@ -48,5 +48,10 @@ class BabyEventForm(forms.ModelForm):
                 'class':'form-control',
                 'style':'width:100px;',
                 'placeholder':'Sleep',
+            }),
+            'meds': TextInput(attrs={
+                'class':'form-control',
+                'style':'width:100px;',
+                'placeholder':'Meds',
             })
         }
