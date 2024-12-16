@@ -4,10 +4,19 @@ Parents of infants have the ever-important job of ensuring their little one is n
 Traditionally, these statistics might be documented on a notebook or notepad, but these pages can get lost, destroyed, and are hard to read at 3AM when your baby won’t sleep. BabyDataApp provides a quick and convenient web user interface that allows parents to track their little one. Paper and pen can be retired in favor of the parents’ cell phones for ease of use. BabyDataApp tracks information such as the dates and times of wet diapers, dirty diapers, medicine used, fluids/feedings ingested, and any general notes that might go with one of these aspects (super fussy at diaper change, for example).
 
 ## Installation
-***Change this for final*** Complete installation instructions will go here upon app completion.
+Running from the Docker file:
+1) Download the Docker image from "https://hub.docker.com/repository/docker/mpopelka/babydataproject". Here is the pull request to copy: "docker pull mpopelka/babydataproject:latest".
+2) Build the image on your Docker-running computer using the following command:
+   - docker-compose build
+3) Once it is built, run the image on your Docker-running computer using the following command:
+   -docker-compose up
 
-## Getting Started
-***Change this for final*** To use BabyDataApp, simply use Docker to spin up a new instance. ***Also may use AWS to host?***
+Running from Github (local connection):
+1) Fork a copy of the application repository from the following link: https://github.com/mpopelka94/babydataproject
+2) Install all dependencies as required by requirements.txt
+3) Run the application using the following command: waitress-serve --listen=*:8000 BabyDataProject.wsgi.application
+
+
 
 ## Deliverables
 - [User/Mis-User Cases](https://github.com/mpopelka94/babydataproject/blob/main/docs/UseMisuseStories.md)
