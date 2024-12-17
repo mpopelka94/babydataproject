@@ -16,7 +16,7 @@ Running from Github (local connection):
 2) Install all dependencies as required by requirements.txt
 3) Run the application using the following command: waitress-serve --listen=*:8000 BabyDataProject.wsgi.application
 
-The application is then available at http://localhost:8000/admin/login/.
+The application is then available at http://localhost:8000/accounts/login/.
 
 
 
