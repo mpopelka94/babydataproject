@@ -5,11 +5,15 @@ Traditionally, these statistics might be documented on a notebook or notepad, bu
 
 ## Installation
 Running from the Docker file:
-1) Download the Docker image from "https://hub.docker.com/repository/docker/mpopelka/babydataproject". Here is the pull request to copy: "docker pull mpopelka/babydataproject:latest".
+1) Download the Docker images from hub.docker.com. Two images are required:
+   - The DB Docker image from "https://hub.docker.com/repository/docker/mpopelka/babydataproject
+     - Here is the pull request to copy: "docker pull mpopelka/babydataproject:latest"
+   - The web Docker image from https://hub.docker.com/repository/docker/mpopelka/babydataproject-web
+     - Here is the pull request to copy: "docker pull mpopelka/babydataproject-web:latest".
 2) Build the image on your Docker-running computer using the following command:
    - docker-compose build
 3) Once it is built, run the image on your Docker-running computer using the following command:
-   -docker-compose up
+   - docker-compose up
 
 Running from Github (local connection):
 1) Fork a copy of the application repository from the following link: https://github.com/mpopelka94/babydataproject
